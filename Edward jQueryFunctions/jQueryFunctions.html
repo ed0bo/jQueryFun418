@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="jQueryFunctionsCSS.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#clickExample").click(function(){
+                $(this).css('color', 'red');
+            })
+
+            $("#hideExample").click(function(){
+                $(this).hide();
+            })
+
+            $("#showExample").click(function(){
+                $("#hideExample").toggle();
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <h1>
+        .click and .CSS example
+    </h1>
+    <p id="clickExample">
+        When you CLICK on the text here, the text will change to red.
+    </p>
+    <h1 id="showExample">
+        .hover .hide .show example
+    </h1>
+    <p id="hideExample">
+        when you click here, this text should hide.  When you click the h1 above, it should toggle.
+    </p>
+    <h1>
+        
+    </h1>
+</body>
+</html>
